@@ -5,7 +5,7 @@ function criarChamados(titulo, descricao){
     console.log("nome ", titulo)
     console.log("Mensagem ", descricao)
 
-   return ipcRenderer.invoke('criar-chamado', titulo, descricao)
+    return ipcRenderer.invoke('criar-chamado', titulo, descricao)
     
 
 }

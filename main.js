@@ -30,7 +30,7 @@ ipcMain.handle('criar-chamado', async function (evento, titulo, descricao) {
   })
 
   await conexao.execute("INSERT INTO chamados (titulo, descricao) VALUES(?, ?)", [titulo, descricao])
-  return 
+   
 })
 
 ipcMain.handle('listar-chamados', async function () {
